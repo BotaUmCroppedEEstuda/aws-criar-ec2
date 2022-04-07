@@ -45,7 +45,7 @@ Nome do par de chaves: (lembrando que essas chaves podem ser reutilizadas, tente
 _Fazer download do par de chaves_
 
 Coloque o arquivo gerado numa pasta fácil de achar, pois sempre que precisarmos acessar o cli da aws vamos precisar referenciar esse arquivo.
-Coloquei na pasta Documentos -> AWS -> teste-par-chave.pem
+Coloquei na pasta _Documentos -> AWS -> teste-par-chave.pem_
 
 Executar instâncias
 
