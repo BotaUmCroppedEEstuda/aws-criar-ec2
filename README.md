@@ -24,7 +24,7 @@ Manter a instância selecionada na qualificação gratuita -> Proximo
 ### Etapa 3 - Configure os detalhes da instância
 Manter as configurações -> Proximo
 
-####Etapa 4 - Adicionar armazenamento
+#### Etapa 4 - Adicionar armazenamento
 Manter as configurações -> Proximo
 
 ### Etapa 5 - Adicionar Tags
@@ -65,10 +65,10 @@ Abra o terminal:
 
 ```bash
 # Acesse a pasta onde você salvou o arquivo teste-par-chave.pem
-$ ssh -i "teste-par-chave.pem" (endereço do seu servidor) -> Enter
+$ ssh -i "teste-par-chave.pem" (endereço do seu servidor)
 
 # Vai aparecer a mensagem
-$ Are you sure you want to continue connecting (yes/no/[fingerprint])? Yes
+Are you sure you want to continue connecting (yes/no/[fingerprint])? Yes
 
 # O root do seu terminal irá mudar para o root da máquina que você está acessando
 ubuntu@ip-172-31-25-181: 
