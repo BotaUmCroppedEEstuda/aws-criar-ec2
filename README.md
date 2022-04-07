@@ -13,49 +13,48 @@ Entrar -> Usuário root
 
 Na barra de prequisa -> **EC2**
 
-Executar instância -> Botão: Executar instância -> Executar instância
+Executar instância -> Botão: Executar instância -> _Executar instância_
 
 ### Etapa 1 - Selecione a AMI
-Buscar a imagem: Ubuntu Server 20.04 LTS (HVM), SSD Volume Type (Gratuita) -> Selecionar - > Proximo
+Buscar a imagem: Ubuntu Server 20.04 LTS (HVM), SSD Volume Type (Gratuita) -> Selecionar - > _Proximo_
 
 ### Etapa 2 - Escolha um tipo de instância
-Manter a instância selecionada na qualificação gratuita -> Proximo
+Manter a instância selecionada na qualificação gratuita -> _Proximo_
 
 ### Etapa 3 - Configure os detalhes da instância
-Manter as configurações -> Proximo
+Manter as configurações -> _Proximo_
 
 ### Etapa 4 - Adicionar armazenamento
-Manter as configurações -> Proximo
+Manter as configurações -> _Proximo_
 
 ### Etapa 5 - Adicionar Tags
 Adicionar tag -> Chave: Name / Valor: (nome identificador da sua maquina) teste-maquina-aws
-Manter o restante das configurações -> Proximo
+Manter o restante das configurações -> _Proximo_
 
 ### Etapa 6 - Configure o security group
-Adicionar regra -> Tipo: Regra personalizada TCP / Intervalo de portas: 8080 / Origem: Personalizado 0.0.0.0/0
-Verificar e ativar
+Adicionar regra -> Tipo: Regra personalizada TCP / Intervalo de portas: 8080 / Origem: Personalizado 0.0.0.0/0 -> _Verificar e ativar_
 
 ### Etapa 7 - Análise
-Apenas um resumo da máquina criada
-Executar
+Apenas um resumo da máquina criada -> _Executar_
 
-Selecione um par de chaves existente ou crie um novo par de chaves
-Criar um novo par de chaves.
-Tipo de par de chaves: RSA
-Nome do par de chaves: (essas chaves podem ser reutilizados para acessar outras máquinas, tente colocar um nome genérico) teste-par-chave
-Fazer download do par de chaves
+### Segurança
+Selecione um par de chaves existente ou crie um novo par de chaves</br>
+Criar um novo par de chaves</br>
+Tipo de par de chaves: **RSA**</br>
+Nome do par de chaves: (lembrando que essas chaves podem ser reutilizadas, tente colocar um nome genérico) **teste-par-chave**</br>
+_Fazer download do par de chaves_
 
 Coloque o arquivo gerado numa pasta fácil de achar, pois sempre que precisarmos acessar o cli da aws vamos precisar referenciar esse arquivo.
 Coloquei na pasta Documentos -> AWS -> teste-par-chave.pem
 
 Executar instâncias
 
-É esperado que tenha essa mensagem em tela: Sua instância está sendo iniciada. Aguarde ela ser finalizada.
+É esperado que tenha essa mensagem em tela: _Sua instância está sendo iniciada._ Aguarde ela ser finalizada.
 
 Volte para o painel EC2
-Clique em: Instâncias (em execução) 
+Clique em: _Instâncias (em execução)_
 
-Sua instância deve aparecer nessa listagem, aguarde até que a coluna: Verificação de status tenha o valor de: 2/2 verificações aprovadas
+Sua instância deve aparecer nessa listagem, aguarde até que a coluna: Verificação de status tenha o valor de: _2/2 verificações aprovadas_
 
 <h2 align="center">ACESSANDO A INSTÂNCIA CRIADA</h2>
 Clique com o botão direito sobre a instância criada -> Conectar -> Cliente SSH
