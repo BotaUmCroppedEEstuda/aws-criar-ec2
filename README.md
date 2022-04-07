@@ -28,7 +28,7 @@ Manter as configurações -> _Proximo_
 Manter as configurações -> _Proximo_
 
 ### Etapa 5 - Adicionar Tags
-Adicionar tag -> Chave: **Name** / Valor: (nome identificador da sua maquina) **teste-maquina-aws**
+Adicionar tag -> Chave: **Name** / Valor: (nome identificador da sua instancia) **teste-maquina-aws**
 Manter o restante das configurações -> _Proximo_
 
 ### Etapa 6 - Configure o security group
@@ -44,7 +44,7 @@ Tipo de par de chaves: **RSA**</br>
 Nome do par de chaves: (lembrando que essas chaves podem ser reutilizadas, tente colocar um nome genérico) **teste-par-chave**</br>
 _Fazer download do par de chaves_
 
-Coloque o arquivo gerado numa pasta fácil de achar, pois sempre que precisarmos acessar o cli da aws vamos precisar referenciar esse arquivo.
+Coloque o arquivo gerado numa pasta fácil de achar, pois sempre que precisarmos acessar a instancia via ssh vamos precisar referenciar esse arquivo.
 Coloquei na pasta _Documentos -> AWS -> teste-par-chave.pem_
 
 Executar instâncias
@@ -78,8 +78,8 @@ ubuntu@ip-172-31-25-181:
 Abra o terminal:
 
 ```bash
-# Vamos atualizar o linux
-$ sudo apt update
+# Vamos atualizar os pacotes do linux
+$ sudo apt-get update
 
 # Vamos instalar a JDK
 $ sudo apt-get install default-jdk --yes
@@ -105,12 +105,12 @@ $ git clone https://github.com/BotaUmCroppedEEstuda/endpoint-teste.git
 $ cd endpoint-teste
 
 # Rodar o Maven
+$ mvn clean 
+
+# Criar a pasta target
 $ mvn clean install
 
-# Criar a parta target
-$ mvn clean install
-
-# Entre dentro da pasta target
+# Entre na pasta target
 $ cd target
 
 # Liste os arquivos dentro da pasta target
