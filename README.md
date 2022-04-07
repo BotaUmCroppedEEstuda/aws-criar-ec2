@@ -15,27 +15,27 @@ Na barra de prequisa -> **EC2**
 
 Executar instância -> Botão: Executar instância -> Executar instância
 
-###Etapa 1 - Selecione a AMI
+### Etapa 1 - Selecione a AMI
 Buscar a imagem: Ubuntu Server 20.04 LTS (HVM), SSD Volume Type (Gratuita) -> Selecionar - > Proximo
 
-###Etapa 2 - Escolha um tipo de instância
+### Etapa 2 - Escolha um tipo de instância
 Manter a instância selecionada na qualificação gratuita -> Proximo
 
-###Etapa 3 - Configure os detalhes da instância
+### Etapa 3 - Configure os detalhes da instância
 Manter as configurações -> Proximo
 
 ####Etapa 4 - Adicionar armazenamento
 Manter as configurações -> Proximo
 
-###Etapa 5 - Adicionar Tags
+### Etapa 5 - Adicionar Tags
 Adicionar tag -> Chave: Name / Valor: (nome identificador da sua maquina) teste-maquina-aws
 Manter o restante das configurações -> Proximo
 
-###Etapa 6 - Configure o security group
+### Etapa 6 - Configure o security group
 Adicionar regra -> Tipo: Regra personalizada TCP / Intervalo de portas: 8080 / Origem: Personalizado 0.0.0.0/0
 Verificar e ativar
 
-###Etapa 7 - Análise
+### Etapa 7 - Análise
 Apenas um resumo da máquina criada
 Executar
 
