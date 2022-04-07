@@ -1,5 +1,5 @@
 <h1 align="center">AWS</h1>
-<p align="center">Nesse documento vamos aprender a criar uma instância na AWS usando o EC2,subir uma aplicação Java e tentar acessar de fora da instância.</p>
+<p align="center">Nesse documento vamos aprender a criar uma instância na AWS usando o EC2, subir uma aplicação Java e tentar acessar de fora da instância.</p>
 
 ## Pré-requisitos:
 Ter uma conta na AWS:
