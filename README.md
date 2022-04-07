@@ -24,7 +24,7 @@ Manter a instância selecionada na qualificação gratuita -> Proximo
 ### Etapa 3 - Configure os detalhes da instância
 Manter as configurações -> Proximo
 
-#### Etapa 4 - Adicionar armazenamento
+### Etapa 4 - Adicionar armazenamento
 Manter as configurações -> Proximo
 
 ### Etapa 5 - Adicionar Tags
